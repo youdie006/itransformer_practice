@@ -1,0 +1,24 @@
+# macOS MPS 지원을 위한 패키지 요구사항
+# Apple Silicon (M1/M2/M3) GPU 가속 활용
+
+# 기본 패키지 (MPS 호환 바전)
+pandas==1.5.3
+scikit-learn==1.2.2
+numpy==1.23.5
+matplotlib==3.7.0
+
+# PyTorch MPS 지원 (2.0+ 버전 필요)
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Transformer 관련
+reformer-pytorch==1.4.4
+einops>=0.6.0
+
+# 시각화 및 유틸리티
+seaborn>=0.12.0
+tqdm>=4.64.0
+
+# MPS 최적화를 위한 추가 패키지
+psutil>=5.9.0  # 메모리 모니터링
